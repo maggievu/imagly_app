@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IMAGLY | Awesome Image App</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Roboto:400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+
+    <!-- <script type="text/javascript" src="jquery.js"></script> -->
+    <script type="text/javascript" src="dataStructure.js"></script>
+</head>
+<body class="container">
+
+    <h1><span class="far fa-images"></span> IMAGLY</h1>
+    <hr>
+    <form id='image-submit' class="">
+
+        <!-- FORM VALIDATION -->
+        <div class="form-group row col-sm-12 font-italic text-secondary"><small>Field with * is required</small></div>
+
+        <div class="form-group row">
+            <label for="image-url" class="col-sm-3 col-form-label">Image URL *</label>
+            <input id="image-url" class="form-control col-sm-9" type="url" placeholder="https://source.unsplash.com/250x250/" required>
+        </div>
+
+        <!-- Image Title will be used for the alt attribute of the image -->
+        <div class="form-group row">
+            <label for="image-title" class="col-sm-3 col-form-label">Title</label>
+            <input id="image-title" class="form-control col-sm-9" type="text" placeholder="It's about...">
+        </div>
+
+        <div class="form-group row">
+            <label for="caption" class="col-sm-3 col-form-label">Caption *</label>
+            <textarea name="caption" id="caption" rows="3" class="form-control col-sm-9" placeholder="Cool caption" required></textarea>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-3 col-form-label"></label>
+            <input type="submit" value="Submit" class="btn btn-lg">
+        </div>
+
+    </form>
+
+    <h2 class="gallery-title">Gallery</h2>
+
+    <div class="gallery my-2">
+
+    </div>
+
+    <h3 class="news-title">News</h2>
+    <div class="news my-2">
+
+    </div>
+
+
+</body>
+</html>

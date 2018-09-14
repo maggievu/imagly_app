@@ -1,0 +1,81 @@
+body {
+    font-family: 'Roboto', arial, verdana, helvetica, sans-serif;
+}
+
+h1 {
+    font-family: 'Do Hyeon', arial, verdana, helvetica, sans-serif;
+    color: chocolate;
+}
+
+.gallery-title {
+    font-weight: 700;
+    color: chocolate;
+}
+
+.news-title {
+    color: chocolate;
+}
+
+#image-submit [type="submit"] {
+    color: #fff;
+    background: chocolate;
+}
+
+.gallery {
+    border-radius: 5px;
+    background-color: rgb(230,230,250);
+    min-height: 1000px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: flex-start;
+}
+
+.gallery img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.gallery .figure {
+    position: relative;
+}
+
+.gallery .button-delete {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    color: crimson;
+    border-color: crimson;
+    font-weight: bold;
+    transition: all .5s ease;
+    padding: 0 8px;
+    background: antiquewhite;
+    opacity: 0;
+}
+
+.gallery .figure:hover .button-delete {
+    opacity: .8;
+}
+
+.gallery .figure:hover .btn-outline-danger:hover {
+    color: crimson;
+    background: #fff;
+    opacity: 1;
+}
+
+@media screen and (min-width: 900px) {
+
+    .gallery-title, .gallery {
+        float: left;
+        width: 70%;
+    }
+
+    .news-title, .news {
+        float: right;
+        margin-left: 5%;
+        width: 25%;
+    }
+}
